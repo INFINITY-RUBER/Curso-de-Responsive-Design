@@ -179,8 +179,18 @@ figure{
     border: 1px solid red;
     flex-shrink: 0;
 }
+.footer {
+  background-color: #1b2127;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer p img{
+  vertical-align: middle;
+}
 .footer a {
-    color: white;
+  color: white;
 }
 .event-list{
     display: flex;
