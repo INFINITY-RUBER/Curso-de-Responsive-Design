@@ -68,6 +68,7 @@ margin-bottom: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .hero-image{
     object-fit: cover;
@@ -97,6 +98,7 @@ margin-bottom: 40px;
     display: flex;  
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .project-course, .project-date, .project-url{
     margin: 10px 0;
@@ -127,8 +129,9 @@ margin-bottom: 40px;
     background-color: #1b2527;
     color: white;
     display: flex;
+    height: 70px;
     justify-content: space-between;
-    height: 90px;
+    flex-wrap: wrap;
  
 }
 
@@ -184,6 +187,7 @@ figure{
   color: white;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .footer p img{
@@ -258,6 +262,7 @@ text-align: center;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .social{
  }
@@ -308,11 +313,33 @@ background-position-x: 5px;
 }
 .container{
     /* border: 1px solid red; */
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
     display: inherit;   
     justify-content: inherit;
     align-items: inherit;
     height: inherit;
     flex-wrap: inherit;
+}
+ /* inicio para los media query de diferentes pantallas */
+
+@media screen and (max-width: 1024px){
+    body {
+        /* border: 10px solid green; */
+    }
+}
+@media screen and (max-width: 768px){
+    body {
+        /* border: 10px solid green; */
+    }
+}
+@media screen and (max-width: 480px){
+    body {
+        /* border: 10px solid green; */
+    }
+}
+@media screen and (max-width: 320px){
+    body {
+        /* border: 10px solid green; */
+    }
 }
