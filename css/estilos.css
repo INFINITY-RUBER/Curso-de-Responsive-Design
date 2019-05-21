@@ -115,14 +115,17 @@ margin-bottom: 40px;
     font-size: 20px;   /* tamaño de la letra */
 }
 .project-details{
-    width: 500px;
+    width: 50%;
     /* color: black; */
 }
 .project strong{
     font-family: 'Fjalla One', sans-serif;
 }
 .project-imageContainer{
-    width: 500px;
+    width: 50%;
+}
+.project-imageContainer img {
+    max-width: 100%;
 }
 
 .header {
@@ -183,11 +186,12 @@ figure{
     flex-shrink: 0;
 }
 .footer {
-  background-color: #1b2127;
-  color: white;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  color: white;
+  background-color: #1b2127;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .footer p img{
@@ -210,8 +214,8 @@ figure{
     justify-content: space-between;
 } */
 .event{ 
-    margin: 10px;
-    width: 480px;
+    margin: 1%;
+    width: 48%;
     flex-shrink: 0;
     border-radius: 10px;
     overflow: hidden;
@@ -264,8 +268,8 @@ text-align: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.social{
- }
+/* .social{
+ } */
 .social-link {
     display: inline-block;
     width: 50px;
@@ -286,7 +290,7 @@ text-align: center;
 .social-link.instagram{
     background-image: url('../images/instagram.svg');
 }
-.from-email input{
+.form-email input{
 border-color: gray;
 padding: 10px20px10px25px;
 border-radius: 5px;
@@ -297,23 +301,23 @@ background-repeat: no-repeat;
 background-position-y:center;
 background-position-x: 5px;
 }
-.from-email button{
+.form-email button{
     display: block;
-
     background: transparent;
     color: white;
-    padding: 10px0;
+    padding: 10px 0;
     border-radius: 5px;
     width: 100px;
     margin-top: 10px;
-
 }
-.from-email h3{
+.form-email h3{
     font-family: 'Source Sans Pro', sans-serif;
 }
 .container{
     /* border: 1px solid red; */
     max-width: 1000px;
+    /* width: 100%; */
+    flex: 1;
     margin: 0 auto;
     display: inherit;   
     justify-content: inherit;
@@ -324,18 +328,92 @@ background-position-x: 5px;
  /* inicio para los media query de diferentes pantallas */
 
 @media screen and (max-width: 1024px){
-    body {
-        /* border: 10px solid green; */
+    .container {
+        padding: 0 1em;
     }
 }
-@media screen and (max-width: 768px){
-    body {
-        /* border: 10px solid green; */
+@media screen and (max-width: 767px){
+    .header {
+       display: block;
+       height: auto;        
+    }
+    .header ol {
+        display: block;
+    }
+    .header ol li {
+        height: 50px;
+    }
+    .header a {
+        justify-content: center;
+    }
+    .header .logo{
+        text-align: center;
+    }
+    .project{
+        display: block;
+    }
+    .project-imageContainer{
+        width: auto;
+        text-align: center;
+    }
+    .project-course, .project-date, .project-url {
+        margin: .3em 0;
+    }
+    .project-details{
+        width: auto;
+        font-size: 16px;
+    }
+    .project-title{
+        font-size: 1.5em;
+        margin-bottom: .3em;
+    }
+    .project-url{
+        font-size: 1em;
+    }
+    .project-course{
+        font-size: .7em;
+    }
+    .project-date{
+        font-size: 1em;
+    }
+    .project-description{
+        font-size: .8em;
+    }
+    .event{
+        width: auto;
+        flex-shrink: initial;
+    }
+    .event img {
+        width: 100%;
     }
 }
 @media screen and (max-width: 480px){
-    body {
-        /* border: 10px solid green; */
+    .project-details {
+        width: auto;
+        font-size: 12px;
+    }
+    .event-details {
+        /* 1em = 16px */
+        margin: -2em .5em .5em;
+        padding: 1em;
+    }
+    .contact{
+        height: auto;
+        padding: 1.5em 0;
+        text-align: center;
+        display: block;
+    }
+    .form-email button {
+        margin: 1em auto;
+        
+    }
+    .form-email h3 {
+        margin-top: 0;
+    }
+    .footer {
+        display: block;
+        text-align: center;
+        border: 1px solid transparent;
     }
 }
 @media screen and (max-width: 320px){
