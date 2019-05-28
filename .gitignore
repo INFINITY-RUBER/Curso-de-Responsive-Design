@@ -1,7 +1,7 @@
 EXAMEN/
 images/
-iconos descargados/
-videos/
+iconos descargados/*
+videos/*
 *.json
 *.docx
 *.zip
