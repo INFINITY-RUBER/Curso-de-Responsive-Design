@@ -1,5 +1,4 @@
-
-"#CURSO DE RESPONSI DISING" 
+"CURSO DE RESPONSI DISING" 
 =======
 # Curso-de-Responsive-Design
 https://infinity-ruber.github.io/Curso-de-Responsive-Design
